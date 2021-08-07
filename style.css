@@ -92,6 +92,7 @@ header{
     margin-right: auto;
     margin-top: 10px;
     display: block;
+    border-radius: 8px;
 }
 .player-info{
     margin: 0 0 0 15px;
@@ -148,9 +149,42 @@ header{
     color: black;
 }
 
+/* blog styles */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 25px;
+}
+.blogs-title{
+    font-size: 35px;
+    padding-top: 45px;
+    padding-bottom: 25px;
+}
+.blog{
+    display: flex;
+}
+
+ .blog-thumbail img{
+    height: 126px;
+    width: 230px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 25px;
+}
+.blog-author{
+    font-size: 16px;
+    color: #9F9F9F;
+}
+.blog-author a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+}
 
 
-/* media Quaries */
 
 /* mobile version */
 
@@ -177,8 +211,11 @@ header{
     .button{
         padding: 05px 15px;
     }
-    .all-players{
+    .all-players, .blog{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        flex-direction: column;
     }
     .highlight-thumbail{
         margin: 10px;
